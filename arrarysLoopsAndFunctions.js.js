@@ -5,3 +5,6 @@ ages[ages.length - 1]; //locating the last index element in the array
 ages[0];                // locating the first index element
 
 console.log((ages[ages.length -1]) - (ages[0])); //printing result of last index element minus first index element
+
+ages.push(30);
+console.log(ages[ages.length - 1] - (ages[0]));
