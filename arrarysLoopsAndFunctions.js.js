@@ -32,3 +32,9 @@ function findNameAverage(names){ //write function with names as the parameter
     return average; //return variable
 }
 console.log(findNameAverage(['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'])); // call on function, expected outcome 3.83
+
+
+ for (f = 0; f < names.length; f++) { //for loop with variable f
+    f = names.join (' '); //f equal to names array, concantenated with spaces between
+    console.log(f); // printing f
+ }
