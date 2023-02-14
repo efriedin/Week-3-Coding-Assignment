@@ -39,10 +39,21 @@ console.log(findNameAverage(['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'])); /
     console.log(f); // printing f
  }
 
- var namesLength = [ ]
+ var namesLength = [ ] //declaring namesLength array
 
- for(i=0; i < names.length; i++){
-    namesLength.push(names[i].length);
+ for(i=0; i < names.length; i++){ //for loop to iterate through names array
+    namesLength.push(names[i].length); //adding the character values from names array to nameslength
     ;
- } console.log(namesLength);
+ } console.log(namesLength); //printing new array
  
+function sumNames(namesLength) { //create function sumNames with namesLength as the parameter
+    let sum = 0  //initializing sum to zero
+
+    for(let i = 0; i < namesLength.length; i++){ //for loop to iterate through values of array
+        sum += namesLength[i]; //iterate through each value add to previous sum
+    }
+    console.log(sum); // 23
+    return sum; //return sum
+}
+
+sumNames([3, 5, 3, 5, 4, 3]); //call function and give array values
