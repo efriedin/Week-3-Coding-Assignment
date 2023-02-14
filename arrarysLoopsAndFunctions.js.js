@@ -38,3 +38,11 @@ console.log(findNameAverage(['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'])); /
     f = names.join (' '); //f equal to names array, concantenated with spaces between
     console.log(f); // printing f
  }
+
+ var namesLength = [ ]
+
+ for(i=0; i < names.length; i++){
+    namesLength.push(names[i].length);
+    ;
+ } console.log(namesLength);
+ 
