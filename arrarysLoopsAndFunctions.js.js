@@ -138,3 +138,15 @@ function twoArrays (numbersArray, nummies){ //function twoArrays with numbersArr
 }
 
 console.log(twoArrays([1,9,7,9], [2,9,8])); //calling on function, expected outcome, true
+
+var isHotOutside = true; //var isHotOutside set to a boolean value
+var moneyInPocket = 0; //var moneyInPocket set to a numerical value
+
+function willBuyDrink (isHotOutside, moneyInPocket){ //function willBuyDrink with parameters isHotOutside and moneyInPocket
+    if (isHotOutside == true && moneyInPocket > 10.50){ //conditional isHotOutSide must be equal to true and MoneyInPocket must be greater than 10.50
+        return true; //if condition is met return true
+    } else {
+        return false; //else return false
+    }
+}
+console.log(willBuyDrink(false, 12));//call function, expected outcome, false
