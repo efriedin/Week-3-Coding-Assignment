@@ -113,3 +113,28 @@ return arrAvNummies; // returning our variable that holds the average
 
 avNummies([1, 3, 5, 7, 9]); //calling on function, expected output, 5
 
+function twoArrays (numbersArray, nummies){ //function twoArrays with numbersArray and nummies as the parameter
+    var arrraayAverage = 0; //create empty variable arrrayAverage
+
+    for(i = 0; i < numbersArray.length; i++){ //for loop to iterate through numbersArrays
+        arrraayAverage += numbersArray[i];  //adding the values of numbersArrray elements to arrayAverage
+    }
+    arrraayAverage = arrraayAverage / numbersArray.length; //calculating average
+    console.log(arrraayAverage); //printing average, expected outcome, 6.5
+
+    var arAvNummies = 0; //empty variable arAvNummies
+
+    for (i=0; i < nummies.length; i++){ //for loop to iterate through nummies array
+        arAvNummies += nummies[i]; //adding values of nummies array to arAvNummies variable
+    }
+    arAvNummies = arAvNummies / nummies.length ; //calculating average 
+    console.log(arAvNummies); //printing average, expected outcome, 6.333333...
+
+    if (arrraayAverage > arAvNummies){ //if statement to check if arrraayAverage is greater than arAvNummies
+        return true; //if condition is met return true
+    } else {
+        return false; //else return false
+    }
+}
+
+console.log(twoArrays([1,9,7,9], [2,9,8])); //calling on function, expected outcome, true
