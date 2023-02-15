@@ -57,3 +57,16 @@ function sumNames(namesLength) { //create function sumNames with namesLength as 
 }
 
 sumNames([3, 5, 3, 5, 4, 3]); //call function and give array values
+
+
+
+function helloFunction (word, n){ //function helloFunction 
+    
+  for (i=0; i <= n; i++) { //setting temporary variable i compared to n
+   var repeatWord = word.repeat(i); //creating variable repeatWord to be what is input for word repeated i amount of times
+     }
+   console.log(repeatWord); //print value of repeat word
+    return (repeatWord); //return repeat word
+}
+helloFunction ("yogurt", 2); // calling function, expected output, yogurtyogurt
+
