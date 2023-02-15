@@ -99,3 +99,17 @@ function arrayAverage (numbersArray){ //create function arrayAverage with number
 }
 arrayAverage ([20,300,50,77,20,600]); //calling funting, expected outcome, true
 
+var nummies = []; //create nummies array set to an empty array
+
+function avNummies (nummies){ //function avNummies with parameter nummies
+    var arrAvNummies = 0; //empty variable arrAvNummies
+    for (i=0; i < nummies.length; i++){ //for loop to iterate through nummies array
+    arrAvNummies += nummies[i]; //adding values of nummies array to arrAvNummies variable
+}
+arrAvNummies = arrAvNummies / nummies.length ; //dividing by nummies length to get the average
+console.log(arrAvNummies); //printing the average
+return arrAvNummies; // returning our variable that holds the average
+}
+
+avNummies([1, 3, 5, 7, 9]); //calling on function, expected output, 5
+
