@@ -70,3 +70,13 @@ function helloFunction (word, n){ //function helloFunction
 }
 helloFunction ("yogurt", 2); // calling function, expected output, yogurtyogurt
 
+var firstName = " "; //create variable firstName equal to an empty string
+var lastName = " "; //creat variable lastName equal to an empty string
+
+function fullName (firstName, lastName){ //create function fullName with parameters firstName and lastName
+    var combineNames = firstName.concat(" ", lastName); //create variable combineNames equal to the concatenation of the parameters seperated by a space
+    console.log(combineNames); //print combineNames
+    return combineNames ; //return combineNames
+} 
+
+fullName("Peetah", "Griffin"); //calling on function, expected output, Peetah Griffin
