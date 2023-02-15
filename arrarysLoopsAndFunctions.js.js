@@ -150,3 +150,33 @@ function willBuyDrink (isHotOutside, moneyInPocket){ //function willBuyDrink wit
     }
 }
 console.log(willBuyDrink(false, 12));//call function, expected outcome, false
+
+
+
+var amountOfCats = 8;  //number of cats expected
+var foodCost = 30;      //cost of food
+var litterCost = 20;    //cost of litter
+
+
+function isItTooManyCats (amountOfCats){ //function isTooManyCats with parameter amountOfCats
+
+    var totFoodCost = 0     //empty variable to hold total cost of food
+    var totLitterCost = 0   ///empty vairable to hold total cost of litter
+    
+     //if 1 cat
+    if (amountOfCats == 1) { 
+        totFoodCost = foodCost * amountOfCats; //fixed cost of one cat
+        totLitterCost = litterCost * amountOfCats; //fixed cost of one cat
+    }
+    //if more than 1 cat
+    if ( amountOfCats > 1){
+         totFoodCost = (foodCost * (amountOfCats * .2)) + foodCost; //calculates a 20% food cost increase per cat 
+         totLitterCost = (litterCost * (amountOfCats * .75)) + litterCost; //calculates a 75% litter cost increase per cat
+            
+    }
+    
+    console.log("If you have " + amountOfCats + " cats" + " Then the cost of food will be $" + totFoodCost + " and the cost of litter will be $" + totLitterCost +"."); //prints the amount of cats and expected cost for food and litter
+    
+    return ;
+
+} isItTooManyCats(amountOfCats); //calling function
