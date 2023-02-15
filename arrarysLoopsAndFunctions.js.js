@@ -80,3 +80,22 @@ function fullName (firstName, lastName){ //create function fullName with paramet
 } 
 
 fullName("Peetah", "Griffin"); //calling on function, expected output, Peetah Griffin
+
+var numbersArray = []; //declare variable numbersArray set to an empty array
+
+function arrayAverage (numbersArray){ //create function arrayAverage with numberArray as the parameter
+    var arrayAverage = 0; //create empty variable arrayAverage
+    for(i = 0; i < numbersArray.length; i++){ //for loop to iterate through numbersArrays
+        arrayAverage += numbersArray[i];  //adding the values of numbersArray elements to arrayAverage
+    }
+    arrayAverage = arrayAverage / numbersArray.length; //divding by length to get average
+    if (arrayAverage < 100){ //if statement for if arrayAVerage is less than 100 to print false
+        console.log("false");
+    } else {   //else print true
+       console.log("true");
+   }
+    
+    return arrayAverage; //return arrayAverage
+}
+arrayAverage ([20,300,50,77,20,600]); //calling funting, expected outcome, true
+
