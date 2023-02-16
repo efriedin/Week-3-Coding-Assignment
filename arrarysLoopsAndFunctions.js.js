@@ -11,40 +11,53 @@ console.log(ages[ages.length - 1] - (ages[0])); //expected outcome 27
 
 
 function findAverage(ages){ //write function that takes ages
+
     let average = 0; //create variable to hold average
+
     for (let i = 0; i < ages.length; i++){//loop through the array
         average += ages[i]; //statment to calculate average
     }
+
     average = average / ages.length //divide by the length
     return average;//return variable
 }
-console.log(findAverage([3, 9, 23, 64, 2, 8, 28, 93])); //call on function 
+console.log(findAverage(ages)); //call on function 
+
+
 
 
 let names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob']; //names array
 
 function findNameAverage(names){ //write function with names as the parameter
+
     let average = 0 //create variable to hold average
+
     for (let x = 0; x < names.length; x++){ //loop through array
     average += names[x].length; //statemnt to calculate average characters
     }
+
     average = average / names.length // divide by length
     return average; //return variable
 }
-console.log(findNameAverage(['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'])); // call on function, expected outcome 3.83
+console.log(findNameAverage(names)); // call on function, expected outcome 3.83
+
 
 
  for (f = 0; f < names.length; f++) { //for loop with variable f
+
     f = names.join (' '); //f equal to names array, concantenated with spaces between
     console.log(f); // printing f
  }
 
  var namesLength = [ ] //declaring namesLength array
 
+
  for(i=0; i < names.length; i++){ //for loop to iterate through names array
     namesLength.push(names[i].length); //adding the character values from names array to nameslength
-    ;
  } console.log(namesLength); //printing new array
+
+
+
  
 function sumNames(namesLength) { //create function sumNames with namesLength as the parameter
     let sum = 0  //initializing sum to zero
@@ -52,68 +65,88 @@ function sumNames(namesLength) { //create function sumNames with namesLength as 
     for(let i = 0; i < namesLength.length; i++){ //for loop to iterate through values of array
         sum += namesLength[i]; //iterate through each value add to previous sum
     }
-    console.log(sum); // 23
+
     return sum; //return sum
 }
 
-sumNames([3, 5, 3, 5, 4, 3]); //call function and give array values
+console.log(sumNames(namesLength)); //call function and give array values
 
 
+
+var word = "yogurt"; //declaring word variable
+var n = 2;          // declaring n variable
 
 function helloFunction (word, n){ //function helloFunction 
     
   for (i=0; i <= n; i++) { //setting temporary variable i compared to n
    var repeatWord = word.repeat(i); //creating variable repeatWord to be what is input for word repeated i amount of times
      }
-   console.log(repeatWord); //print value of repeat word
+
     return (repeatWord); //return repeat word
 }
-helloFunction ("yogurt", 2); // calling function, expected output, yogurtyogurt
 
-var firstName = " "; //create variable firstName equal to an empty string
-var lastName = " "; //creat variable lastName equal to an empty string
+helloFunction (word, n); // calling function, expected output, yogurtyogurt
+
+
+
+var firstName = "Peetah"; //create variable firstName equal to an empty string
+var lastName = "Griffin"; //creat variable lastName equal to an empty string
 
 function fullName (firstName, lastName){ //create function fullName with parameters firstName and lastName
+
     var combineNames = firstName.concat(" ", lastName); //create variable combineNames equal to the concatenation of the parameters seperated by a space
-    console.log(combineNames); //print combineNames
+
     return combineNames ; //return combineNames
 } 
 
-fullName("Peetah", "Griffin"); //calling on function, expected output, Peetah Griffin
+console.log(fullName(firstName, lastName)); //calling on function, expected output, Peetah Griffin
 
-var numbersArray = []; //declare variable numbersArray set to an empty array
+
+
+var numbersArray = [20,300,50,77,20,600]; //declare variable numbersArray 
 
 function arrayAverage (numbersArray){ //create function arrayAverage with numberArray as the parameter
-    var arrayAverage = 0; //create empty variable arrayAverage
+
+    var arrayyAverage = 0; //create empty variable arrayAverage
+
     for(i = 0; i < numbersArray.length; i++){ //for loop to iterate through numbersArrays
-        arrayAverage += numbersArray[i];  //adding the values of numbersArray elements to arrayAverage
+        arrayyAverage += numbersArray[i];  //adding the values of numbersArray elements to arrayAverage
     }
-    arrayAverage = arrayAverage / numbersArray.length; //divding by length to get average
-    if (arrayAverage < 100){ //if statement for if arrayAVerage is less than 100 to print false
+
+    arrayyAverage = arrayyAverage / numbersArray.length; //divding by length to get average
+
+    if (arrayyAverage < 100){ //if statement for if arrayAVerage is less than 100 to print false
         console.log("false");
     } else {   //else print true
        console.log("true");
    }
     
-    return arrayAverage; //return arrayAverage
+    return arrayyAverage; //return arrayAverage
 }
-arrayAverage ([20,300,50,77,20,600]); //calling funting, expected outcome, true
+console.log(arrayAverage(numbersArray)); //calling function, expected outcome, true
 
-var nummies = []; //create nummies array set to an empty array
+
+
+var nummies = [1, 3, 5, 7, 9]; //create nummies array 
 
 function avNummies (nummies){ //function avNummies with parameter nummies
+
     var arrAvNummies = 0; //empty variable arrAvNummies
+
     for (i=0; i < nummies.length; i++){ //for loop to iterate through nummies array
-    arrAvNummies += nummies[i]; //adding values of nummies array to arrAvNummies variable
-}
-arrAvNummies = arrAvNummies / nummies.length ; //dividing by nummies length to get the average
-console.log(arrAvNummies); //printing the average
-return arrAvNummies; // returning our variable that holds the average
+        arrAvNummies += nummies[i]; //adding values of nummies array to arrAvNummies variable
+    }
+
+    arrAvNummies = arrAvNummies / nummies.length ; //dividing by nummies length to get the average
+    return arrAvNummies; // returning our variable that holds the average
 }
 
-avNummies([1, 3, 5, 7, 9]); //calling on function, expected output, 5
+console.log(avNummies(nummies)); //calling on function, expected output, 5
+
+
 
 function twoArrays (numbersArray, nummies){ //function twoArrays with numbersArray and nummies as the parameter
+
     var arrraayAverage = 0; //create empty variable arrrayAverage
 
     for(i = 0; i < numbersArray.length; i++){ //for loop to iterate through numbersArrays
@@ -137,19 +170,22 @@ function twoArrays (numbersArray, nummies){ //function twoArrays with numbersArr
     }
 }
 
-console.log(twoArrays([1,9,7,9], [2,9,8])); //calling on function, expected outcome, true
+console.log(twoArrays(numbersArray, nummies)); //calling on function, expected outcome, true
+
+
 
 var isHotOutside = true; //var isHotOutside set to a boolean value
 var moneyInPocket = 0; //var moneyInPocket set to a numerical value
 
 function willBuyDrink (isHotOutside, moneyInPocket){ //function willBuyDrink with parameters isHotOutside and moneyInPocket
+
     if (isHotOutside == true && moneyInPocket > 10.50){ //conditional isHotOutSide must be equal to true and MoneyInPocket must be greater than 10.50
         return true; //if condition is met return true
     } else {
         return false; //else return false
     }
 }
-console.log(willBuyDrink(false, 12));//call function, expected outcome, false
+console.log(willBuyDrink(isHotOutside, moneyInPocket));//call function, expected outcome, false
 
 
 
@@ -181,7 +217,7 @@ function isItTooManyCats (amountOfCats){ //function isTooManyCats with parameter
 
 } isItTooManyCats(amountOfCats); //calling function
 
-//console.log(isItTooManyCats(amountOfCats)); // OUTPUT TO THE SCREEN
+//**Please ignore, not part of assignment **console.log(isItTooManyCats(amountOfCats)); // OUTPUT TO THE SCREEN
 
 //avg = 0
 //avg = isItTooManyCats(amountOfCats) // return value get stored into avg
@@ -189,7 +225,7 @@ function isItTooManyCats (amountOfCats){ //function isTooManyCats with parameter
 
 //amountOfCats = 5
 //avg = isItTooManyCats(amountOfCats) // return value get stored into avg
-//console.log(avg) // 60
+//console.log(avg) // 60 **not part of assignment**
 
 
 //I made the function above with the quote "How many cats are too many cats?" in mind. Someone gifted my
