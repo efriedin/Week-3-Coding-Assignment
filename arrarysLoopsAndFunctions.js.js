@@ -180,3 +180,27 @@ function isItTooManyCats (amountOfCats){ //function isTooManyCats with parameter
     return ;
 
 } isItTooManyCats(amountOfCats); //calling function
+
+//console.log(isItTooManyCats(amountOfCats)); // OUTPUT TO THE SCREEN
+
+//avg = 0
+//avg = isItTooManyCats(amountOfCats) // return value get stored into avg
+//console.log(avg) // 78
+
+//amountOfCats = 5
+//avg = isItTooManyCats(amountOfCats) // return value get stored into avg
+//console.log(avg) // 60
+
+
+//I made the function above with the quote "How many cats are too many cats?" in mind. Someone gifted my
+//roommate a sign with this quote on it and everyday it nags me as I stare at it while 
+//making my morning coffee. So here I have created the funtion isItTooManyCats to answer 
+//the question from a financial point of view. Being college students, the finacial aspect seems to be the 
+//most resonable view to look at it from. I find that the most costly part of having a
+//cat is the food and litter, so I have choosen those, as well as, amount of cats as 
+//the variables. I've set amountOfCats as the parameter of my function. Then within the 
+//function I have created equations to calculate the total costs of food and litter for 
+//the desired amount of cats. I have set the main 3 variables outside of the function so 
+//to make the function more dynamic.
+//Now to give it some html formatting and my roomates can
+//easily figure out if they can really afford that fourth cat. 
