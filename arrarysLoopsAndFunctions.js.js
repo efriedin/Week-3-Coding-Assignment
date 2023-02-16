@@ -7,6 +7,7 @@ ages[0];                // locating the first index element
 console.log((ages[ages.length -1]) - (ages[0])); //printing result of last index element minus first index element
 
 ages.push(30); //adding a new element to the array
+console.log(ages);
 console.log(ages[ages.length - 1] - (ages[0])); //expected outcome 27
 
 
@@ -46,23 +47,29 @@ console.log(findNameAverage(names)); // call on function, expected outcome 3.83
  for (f = 0; f < names.length; f++) { //for loop with variable f
 
     f = names.join (' '); //f equal to names array, concantenated with spaces between
+
     console.log(f); // printing f
  }
 
+
+
  var namesLength = [ ] //declaring namesLength array
 
+ for(x=0; x < names.length; x++){ //for loop to iterate through names array
 
- for(i=0; i < names.length; i++){ //for loop to iterate through names array
-    namesLength.push(names[i].length); //adding the character values from names array to nameslength
+    namesLength.push(names[x].length); //adding the character values from names array to nameslength
+
  } console.log(namesLength); //printing new array
 
 
 
  
 function sumNames(namesLength) { //create function sumNames with namesLength as the parameter
+
     let sum = 0  //initializing sum to zero
 
     for(let i = 0; i < namesLength.length; i++){ //for loop to iterate through values of array
+
         sum += namesLength[i]; //iterate through each value add to previous sum
     }
 
@@ -74,7 +81,7 @@ console.log(sumNames(namesLength)); //call function and give array values
 
 
 var word = "yogurt"; //declaring word variable
-var n = 2;          // declaring n variable
+var n = 5;          // declaring n variable
 
 function helloFunction (word, n){ //function helloFunction 
     
@@ -85,7 +92,7 @@ function helloFunction (word, n){ //function helloFunction
     return (repeatWord); //return repeat word
 }
 
-helloFunction (word, n); // calling function, expected output, yogurtyogurt
+console.log(helloFunction (word, n)); // calling function, expected output, yogurtyogurt
 
 
 
@@ -116,12 +123,12 @@ function arrayAverage (numbersArray){ //create function arrayAverage with number
     arrayyAverage = arrayyAverage / numbersArray.length; //divding by length to get average
 
     if (arrayyAverage < 100){ //if statement for if arrayAVerage is less than 100 to print false
-        console.log("false");
+        return false;
     } else {   //else print true
-       console.log("true");
+       return true;
    }
     
-    return arrayyAverage; //return arrayAverage
+   return arrayyAverage; //return arrayAverage
 }
 console.log(arrayAverage(numbersArray)); //calling function, expected outcome, true
 
@@ -175,7 +182,7 @@ console.log(twoArrays(numbersArray, nummies)); //calling on function, expected o
 
 
 var isHotOutside = true; //var isHotOutside set to a boolean value
-var moneyInPocket = 0; //var moneyInPocket set to a numerical value
+var moneyInPocket = 13; //var moneyInPocket set to a numerical value
 
 function willBuyDrink (isHotOutside, moneyInPocket){ //function willBuyDrink with parameters isHotOutside and moneyInPocket
 
